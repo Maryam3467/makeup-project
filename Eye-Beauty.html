@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huda-Beauty page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    /* styles.css */
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+        }
+        .top-bar {
+          background-color: #efe9e4;
+          text-align: center;
+          padding: 10px;
+          font-size: 14px;
+          color: black;
+        }
+        .logo-section{
+          background-color: #eb3986;
+          display: flex;
+          justify-content: space-between;
+          height: 100px;
+        }
+        .logo {
+          font-size: 35px;
+          font-weight: bold;
+          color: #fff;
+          margin-top: 32px;
+          margin-left: 650px;
+        }
+        
+        .icons{
+          margin-right: 50px;
+          font-size: 25px;
+          color: white;
+          margin-top: 32px;
+          justify-content: space-between;
+        }
+        .nav-bar {
+          background-color:white;
+          color:black;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 20px;
+          margin-left: 450px;
+          margin-top:18px ;
+        }
+        .menu a {
+          margin: 10px;
+          color:black;
+          text-decoration: none;
+          border: 1px solid #eb3986;
+          padding: 5px 10px;
+          border-radius: 20px;
+          transition: background-color 0.3s, color 0.3s;
+        }
+        .menu a:hover {
+          background-color:#eb3986;
+          color: white;
+}    
+.banner {
+  background-color:#efe9e4;
+  margin-top: 10px;
+    text-align: center;
+}
+.banner img {
+    padding-top: 30px;
+    width: 1300px;
+    z-index: -1;
+}
+.banner-text {
+    position: absolute;
+    padding-left: 300px;
+    transform: translate(-100px,-150px );
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+.content {
+  background-color:#efe9e4;
+  height: 100px;
+    padding-top:20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+  .product-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color:#efe9e4;
+  }
+  .product {
+    background-color:#f1bebe;
+    border: 1px solid #eb3986;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out ;
+  }
+  .product:hover{
+    transform: scale(1.1);
+  }
+  .product img {
+    width: 110px;
+    border: 1px solid rgb(174, 171, 171);
+    border-radius: 10px;
+  }
+  .product-name {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .product-rating {
+    font-size: 18px;
+     color: rgb(94, 3, 3);
+    margin-top: 2px;
+  }
+  .buy-button {
+    background-color: #eb3986;
+    border: 1px solid #eb3986;
+    height: 40px;
+    width:180px;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .buy-button:hover {
+    background-color: #f6708b;
+  }
+      </style>
+</head>
+<body>
+      <!-- Top Bar Section -->
+      <div class="top-bar">
+        <p>Free Shipping on Orders $60+</p>
+    </div>
+    <!-- Logo Section -->
+    <div class="logo-section">
+        <div class="logo">HudaBeauty</div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+    </div>
+    <!-- Navigation Bar Section -->
+    <div class="nav-bar">
+        <nav class="menu">
+            <a href="New.html">New</a>
+            <a href="Best-Sellers.html">Best Sellers</a>
+            <a href="Eye-Beauty.html">Eye Beauty</a>
+            <a href="Makeup-tutorial.html">Makeup tutorial</a>
+            <a href="Gifts&Sets.html">Gifts & Sets</a>
+        </nav>
+    </div>
+    <!--sec1-->
+    <div class="banner">
+      <img src="./media/eye makeup.jpg">
+      <div class="banner-text">EYE MAKEUP</div>
+  </div>
+
+  <div class="content">
+      <p>It's all in the eyes. Demure daytime looks. Dramatic night moves. Subtle lines, smokey vibes, custom brow looks,
+          <br> classic tones or a shot of color.EyeShadow,eyeliner,mascara and brows collections designed to 
+           <br>transform your look.</p>
+  </div>
+  <div class="product-container">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="./media/eye makeup1.jpg">
+      <p class="product-name">SUPERFLUFF BROW MOUSSE</p>
+      <p class="product-rating">☆☆☆☆☆</p>
+      <button class="buy-button">BUY NOW</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="./media/eye makeup 7.jpg">
+      <p class="product-name">LASH SENSATIONAL SKY HIGH SPACE DIAMOND GLITTER MASCARA</p>
+      <p class="product-rating">★★★★☆</p>
+      <button class="buy-button">BUY NOW</button>
+    </div>
+<!-- Product 3 -->
+<div class="product">
+    <img src="./media/eye makeup 3.jpg">
+    <p class="product-name">Express Brow Fast Sculpt Clear Gel Brow Mascara</p>
+    <p class="product-rating">☆☆☆☆☆</p>
+    <button class="buy-button">BUY NOW</button>
+  </div>
+  </div>
+  <div class="product-container">
+    <!-- Product 4-->
+    <div class="product">
+      <img src="./media/eye makeup 5.jpg">
+      <p class="product-name">Hyper Easy Liquid Eyeliner, Eye Makeup</p>
+      <p class="product-rating">☆☆☆☆☆</p>
+      <button class="buy-button">BUY NOW</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="./media/eye makeup 8.jpg">
+      <p class="product-name">Tattoo Studio Brow Pomade Long Lasting, Buildable Eyebrow Makeup</p>
+      <p class="product-rating">★★★★☆</p>
+      <button class="buy-button">BUY NOW</button>
+    </div>
+<!-- Product 6 -->
+<div class="product">
+    <img src="./media/eye makeup 6.jpg">
+    <p class="product-name">Lasting Drama Matte Eyeliner Makeup</p>
+    <p class="product-rating">☆☆☆☆☆</p>
+    <button class="buy-button">BUY NOW</button>
+  </div>
+  </div>
+  <div class="product-container">
+    <!-- Product 7 -->
+    <div class="product">
+      <img src="./media/eye makeup 9.jpg">
+      <p class="product-name">TATTOO STUDIO WATERPROOF BROW PENCIL UP TO 36HR WEAR</p>
+      <p class="product-rating">☆☆☆☆☆</p>
+      <button class="buy-button">BUY NOW</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product">
+      <img src="./media/eye makeup 10.jpg">
+      <p class="product-name">Lasting Drama Matte Eyeliner Makeup</p>
+      <p class="product-rating">★★★★☆</p>
+      <button class="buy-button">BUY NOW</button>
+    </div>
+<!-- Product 9 -->
+<div class="product">
+    <img src="./media/eye makeup 11.jpg">
+    <p class="product-name">EXPRESS BROW DUO2-IN-1 PENCIL AND POWDER</p>
+    <p class="product-rating">☆☆☆☆☆</p>
+    <button class="buy-button">BUY NOW</button>
+  </div>
+  </div>
+</body>
+</html>

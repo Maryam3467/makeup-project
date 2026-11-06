@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.top-bar {
+  background-color: #efe9e4;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+}
+.logo-section{
+  background-color: #eb3986;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 32px;
+  margin-left: 650px;
+}
+
+.icons{
+  margin-right: 50px;
+  font-size: 25px;
+  color: white;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+.nav-bar {
+  background-color:white;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  margin-left: 450px;
+  margin-top:18px ;
+}
+.menu a {
+  margin: 10px;
+  color:black;
+  text-decoration: none;
+  border: 1px solid #eb3986;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu a:hover {
+  background-color:#eb3986;
+  color: white;
+}
+.Section2{
+  background-color:#efe9e4;
+  height: 520px;
+}
+.Section2 h1{
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 30px;
+  text-decoration: underline;
+}
+.Section2 p{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+.products{
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+}
+.c1{
+  margin-top: 20px;
+}
+.product{
+  background-color:#f1bebe;
+  border: 1px solid #eb3986;
+  height: 350px;
+  width: 250px;
+  border-radius: 15px;
+  transition:transform 0.3s ease-in-out ;
+}
+.product:hover{
+  transform: scale(1.1);
+}
+.product img{
+margin-left: 25px;
+transition:transform 0.3s ease-in-out ;
+margin-top: 10px;
+border: 1px solid rgb(174, 171, 171);
+border-radius: 10px;
+}
+.title{
+  text-align: center;
+}
+.reviews{
+   text-align: center;
+   color: rgb(94, 3, 3);
+}
+.price{
+  text-align: center;
+}
+button{
+  background-color: #eb3986;
+  border: 1px solid #eb3986;
+  border-radius: 20px;
+  height: 40px;
+  width:180px;
+  color:white;
+  font-size: 14px;
+  transition: transform 0.3s ease-in;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+button:hover{
+  background-color:white;
+  color: #eb3986;
+  transform: scale(1.1);
+}
+.sec2{
+  background-color:#efe9e4;
+  height: 400px;
+}
+.products1{
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+}
+.c2{
+  margin-top: 20px;
+}
+.product1{
+  background-color:#f1bebe;
+  border: 1px solid #eb3986;
+  transition:transform 0.3s ease-in-out ;
+  height: 350px;
+  width: 250px;
+  border-radius: 15px;
+}
+.product1:hover{
+  transform: scale(1.1);
+}
+.product1 img{
+margin-left: 25px;
+transition:transform 0.3s ease-in-out ;
+margin-top: 10px;
+border: 1px solid rgb(174, 171, 171);
+border-radius: 10px;
+}
+.title1{
+  text-align: center;
+}
+.reviews1{
+   text-align: center;
+   color: rgb(94, 3, 3);
+}
+.price1{
+  text-align: center;
+}
+.sec3{
+  background-color:#efe9e4;
+  height: 400px;
+}
+.products2{
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+}
+.c3{
+  margin-top: 20px;
+}
+.product2{
+  background-color:#f1bebe;
+  border: 1px solid #eb3986;
+  transition:transform 0.3s ease-in-out ;
+  height: 350px;
+  width: 250px;
+  border-radius: 15px;
+}
+.product2:hover{
+  transform: scale(1.1);
+}
+.product2 img{
+margin-left: 25px;
+transition:transform 0.3s ease-in-out ;
+margin-top: 10px;
+border: 1px solid rgb(174, 171, 171);
+border-radius: 10px;
+}
+.title2{
+  text-align: center;
+}
+.reviews2{
+   text-align: center;
+   color: rgb(94, 3, 3);
+}
+.price2{
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <p>Free Shipping on Orders $60+</p>
+    </div>
+    <!-- Logo Section -->
+    <div class="logo-section">
+        <div class="logo">HudaBeauty</div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+    </div>
+    <!-- Navigation Bar Section -->
+    <div class="nav-bar">
+        <nav class="menu">
+            <a href="New.html">New</a>
+            <a href="Best-Sellers.html">Best Sellers</a>
+            <a href="Eye-Beauty.html">Eye Beauty</a>
+            <a href="Makeup-tutorial.html">Makeup tutorial</a>
+            <a href="Gifts&Sets.html">Gifts & Sets</a>
+        </nav>
+    </div>
+    <!--section-->
+    <div class="Section2">
+      <h1>BestSellers</h1>
+      <p>Top-rated makeup for top-tier customers. Choose a cult-favorite!</p>
+      <div class="products">
+          <div class="product">
+              <img src="./media/p1.jpg" height="180px" width="200px">
+              <div class="c1">
+              <div class="title">Lovefest Burning Cherry</div>
+              <div class="reviews">★★★★★ 104 reviews</div>
+              <div class="price">$138.00</div>
+              <button>ADD TO BAG</button>
+          </div>
+          </div>
+          <div class="product">
+              <img src="./media/p3.jpg" height="180px" width="200px">
+              <div class="c1">
+              <div class="title">Icy Nude Blush Filter</div>
+              <div class="reviews">★★★★★ 84 reviews</div>
+              <div class="price">$21.00</div>
+              <button>ADD TO BAG</button>
+          </div>
+          </div>
+          <div class="product">
+              <img src="./media/p2.jpg" height="180px" width="200px">
+              <div class="c1">
+              <div class="title">The Wedding Duo Set</div>
+              <div class="reviews">★★★★★ 90 reviews</div>
+              <div class="price">$165.00</div>
+              <button>ADD TO BAG</button>
+          </div>
+          </div>
+          <div class="product">
+              <img src="./media/p4.jpg" height="180px" width="200px">
+              <div class="c1">
+              <div class="title">Icy Nude Eyeshadow Palette</div>
+              <div class="reviews">★★★★★ 4.9(182 Reviews)</div>
+              <div class="price">$69.00</div>
+              <button>ADD TO BAG</button>
+          </div>
+          </div>
+      </div>
+    </div>
+    <!--sec2-->
+  <div class="sec2">
+    <div class="products1">
+      <div class="product1">
+          <img src="./media/p11.jpg" height="180px" width="200px">
+          <div class="c2">
+          <div class="title1">Lip Contour 2.0 Automatic Matte Lip Pencil</div>
+          <div class="reviews1">★★★★★ 4.8 (810)</div>
+          <div class="price1">$21.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+      <div class="product1">
+          <img src="./media/p21.jpg" height="180px" width="200px">
+          <div class="c2">
+          <div class="title1">Easy Bake Loose Baking & Setting Powder</div>
+          <div class="reviews1">★★★★★ 4.9 (2157)</div>
+          <div class="price1">$38.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+      <div class="product1">
+          <img src="./media/p31.jpg" height="180px" width="200px">
+          <div class="c2">
+          <div class="title1">GloWish Cheeky Vegan Blush Powder</div>
+          <div class="reviews1">★★★★★ 4.8(364 Reviews)</div>
+          <div class="price1">$22.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+      <div class="product1">
+          <img src="./media/p41.jpg" height="180px" width="200px">
+          <div class="c2">
+          <div class="title1">Easy Blur Silicone-Free Smoothing & Pore-Minimizing Primer</div>
+          <div class="reviews1">★★★★★ 4.8(569 Reviews)</div>
+          <div class="price1">$37.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+  </div>
+  </div>
+  <!--sec3-->
+  <div class="sec3">
+    <div class="products2">
+      <div class="product2">
+          <img src="./media/mascara.jpg" height="180px" width="200px">
+          <div class="c3">
+          <div class="title2">Extra Volumizing Lifting Mascara</div>
+          <div class="reviews2">★★★★★ 4.8 (710)</div>
+          <div class="price2">$23.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+      <div class="product2">
+          <img src="./media/prime.jpg" height="180px" width="200px">
+          <div class="c3">
+          <div class="title2">Easy Routine Kit</div>
+          <div class="reviews2">★★★★★ 4.9 (2157)</div>
+          <div class="price2">$88.00 </div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+      <div class="product2">
+          <img src="./media/lipstick.jpg" height="180px" width="200px">
+          <div class="c3">
+          <div class="title2">Power Bullet Matte Lipstick</div>
+          <div class="reviews2">★★★★★ 4.8(2201 Reviews)</div>
+          <div class="price2">$27.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+      <div class="product2">
+          <img src="./media/eyeli.jpg" height="180px" width="200px">
+          <div class="c3">
+          <div class="title2"> Eyeliner Liquid & Pencil</div>
+          <div class="reviews2">★★★★★ 4.8(569 Reviews)</div>
+          <div class="price2">$25.00</div>
+          <button>ADD TO BAG</button>
+      </div>
+      </div>
+  </div>
+  </div>
+</body>
+</html>

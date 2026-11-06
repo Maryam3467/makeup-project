@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huda Beauty Navigation</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--TOP BAR-->
+<div class="top-bar">
+    <p>Free Shipping on Orders $60+</p>
+    <div class="clock">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+</div>
+<script>
+const hrs = document.getElementById("hours");
+const min = document.getElementById("minutes");
+const sec = document.getElementById("seconds");
+setInterval(() => {
+  const now = new Date();
+  hrs.textContent = (now.getHours() < 10 ? "0" : "") + now.getHours();
+  min.textContent = (now.getMinutes() < 10 ? "0" : "") + now.getMinutes();
+  sec.textContent = (now.getSeconds() < 10 ? "0" : "") + now.getSeconds();
+}, 1000);
+</script>
+
+    <!-- Logo Section -->
+    <div class="logo-section">
+        <div class="logo">HudaBeauty</div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+    </div>
+    <!-- Navigation Bar Section -->
+    <div class="nav-bar">
+        <nav class="menu">
+        <a href="New.html">New</a>
+        <a href="Best-Sellers.html">Best Sellers</a>
+        <a href="Eye-Beauty.html">Eye Beauty</a>
+        <a href="Makeup-tutorial.html">Makeup tutorial</a>
+        <a href="Gifts&Sets.html">Gifts & Sets</a>
+        </nav>
+    </div>
+    <!--1st sec-->
+    <div class="bannersection">
+    <div class="innersection">
+    <h1>OUR FINAL EYESHADOW PALETTE</h1>
+ <input  type="button" value="NOTIFY ME" >
+</div>
+ </div>
+<!--2nd sec-->
+<div class="banner">
+    <h1>WINTER SKIN RESCUE</h1>
+</div>
+<div class="sec2">
+<div class="categories">
+    <div class="category">
+        <img src="./media/lipcare.jpg">
+        <p>Lip Care</p>
+    </div>
+    <div class="category">
+        <img src="./media/serums.jpg">
+        <p>Serums</p>
+    </div>
+    <div class="category">
+        <img src="./media/cream.jpg">
+        <p>Creams</p>
+    </div>
+    <div class="category">
+        <img src="./media/cleaser.jpg">
+        <p>Cleanser</p>
+    </div>
+    <div class="category">
+        <img src="./media/hacream.jpg">
+        <p>Hand Cream</p>
+    </div>
+
+</div>
+<button class="shop">SHOP NOW</button>
+</div>
+
+ <!-- 3rd sec-->
+ <div class="bannersection1">
+    <div class="innersection1">
+        <h1>AN INCREDIBLY BOUJEE, FLUFFY & INDULGENT FRAGRANCE.</h1>
+        <button>SHOP NOW</button>
+    </div>
+ </div>
+<!--4th sec-->
+<div class="sec4">
+<div class="container">
+    <div class="menu1">
+        <h1>CLICK HERE TO SEE ITEMS</h1>
+        <div class="menu-item" onclick="showItem('media/BLENDER.jpg', 'Foundation creates an even base for your makeup.')">01. FOUNDATION</div>
+        <div class="menu-item" onclick="showItem('media/cocealer.jpg', 'Concealer hides dark circles and blemishes.')">02. CONCEALER</div>
+        <div class="menu-item" onclick="showItem('media/secjava.jpg', 'Lipstick adds color and definition to your lips.')">03. LIPSTICK</div>
+        <div class="menu-item" onclick="showItem('media/blusher.jpg', 'Blusher gives your cheeks a natural glow.')">04. BLUSHER</div>
+        <div class="menu-item" onclick="showItem('media/powder.jpg', 'Powder sets your makeup and reduces shine.')">05. POWDER</div>
+    </div>
+    <div class="content">
+        <img id="itemImage" src="./media/eyepalette.jpg">
+        <p id="itemDescription">Click on an item to see details.</p>
+    </div>
+</div>
+</div>
+<script>
+    function showItem(imageSrc, description) {
+        document.getElementById('itemImage').src = imageSrc;
+        document.getElementById('itemDescription').textContent = description;
+    }
+</script>
+<!-- Order Form Section -->
+<div class="order-section">
+  <form id="orderForm" onsubmit="return validateOrderForm()">
+    <h2>Place Your Order</h2>
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="e.g. Huda Kattan">
+      <span class="error" id="nameError"></span>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="e.g. you@example.com">
+      <span class="error" id="emailError"></span>
+    </div>
+    <div class="form-group">
+      <label for="product">Product Name</label>
+      <input type="text" id="product" name="product" placeholder="e.g. Rose Eyeshadow Palette">
+      <span class="error" id="productError"></span>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="e.g. 2">
+      <span class="error" id="quantityError"></span>
+    </div>
+    <div class="form-group">
+      <label for="address">Delivery Address</label>
+      <input type="text" id="address" name="address" placeholder="e.g. 123 Beauty Lane, Glam City">
+      <span class="error" id="addressError"></span>
+    </div>
+    <button type="submit" class="btn">Submit Order</button>
+  </form>
+  <div class="order-image">
+    <img src="./media/order.jpg">
+  </div>
+</div>
+<!-- Form Validation Script -->
+<script>
+  function validateOrderForm() {
+    let valid = true;
+    const fields = ["name", "email", "product", "quantity", "address"];
+    fields.forEach(id => {
+      document.getElementById(id + "Error").innerHTML = "";
+    });
+    const name = document.getElementById("fullName").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const product = document.getElementById("product").value.trim();
+    const quantity = document.getElementById("quantity").value.trim();
+    const address = document.getElementById("address").value.trim();
+    if (name === "") {
+      document.getElementById("nameError").innerHTML = "Name is required";
+      valid = false;
+    }
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailPattern.test(email)) {
+      document.getElementById("emailError").innerHTML = "Enter a valid email";
+      valid = false;
+    }
+    if (product === "") {
+      document.getElementById("productError").innerHTML = "Product name is required";
+      valid = false;
+    }
+    if (quantity === "" || isNaN(quantity) || quantity < 1) {
+      document.getElementById("quantityError").innerHTML = "Enter a valid quantity";
+      valid = false;
+    }
+    if (address === "") {
+      document.getElementById("addressError").innerHTML = "Address is required";
+      valid = false;
+    }
+    return valid;
+  }
+</script>
+ <!--footer-->
+ <footer>
+    <div class="footer-container">
+      <!-- Logo and About Section -->
+      <div class="footer-section">
+        <img src="./media/makeup-unsplash.jpg" class="footer-logo" />
+        <p class="footer-about">
+          Discover the best in beauty with us. Premium products curated just for you.
+        </p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="About-Us.html">About Us</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/faqs">FAQs</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Customer Care -->
+      <div class="footer-section">
+        <h4>Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="/returns">Shipping & Returns</a></li>
+          <li><a href="/track-order">Track Order</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms & Conditions</a></li>
+        </ul>
+      </div>
+  
+      <!-- Newsletter and Social Media -->
+      <div class="footer-section">
+        <h4>Stay Connected</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required/>
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-icons">
+          <a href="intagram.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="facebook.jpg" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="twitter.jpg" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Brand Name. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
+ 

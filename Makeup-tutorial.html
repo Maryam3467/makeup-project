@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.top-bar {
+  background-color: #efe9e4;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+}
+.logo-section{
+  background-color: #eb3986;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 32px;
+  margin-left: 650px;
+}
+
+.icons{
+  margin-right: 50px;
+  font-size: 25px;
+  color: white;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+.nav-bar {
+  background-color:white;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  margin-left: 450px;
+  margin-top:18px ;
+}
+.menu a {
+  margin: 10px;
+  color:black;
+  text-decoration: none;
+  border: 1px solid #eb3986;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu a:hover {
+  background-color:#eb3986;
+  color: white;
+}
+header {
+    background-color: rgb(240, 162, 175);
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+        }
+.container {
+ max-width: 1200px;
+  margin: 20px auto;
+padding: 20px;
+background: rgb(240, 162, 175);
+padding-right: 65px;
+
+        }
+
+        h1 {
+            color:black;
+            text-align: center;
+        }
+
+        .tutorial {
+            display: flex;
+            gap: 20px;
+        }
+
+        .tutorial-item {
+            justify-content: space-between;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+
+        .tutorial-item img {
+            width: 400px;
+            height: 300px;
+        }
+        
+
+        .tutorial-content {
+            padding: 10px;
+        }
+
+        .tutorial-content h3 {
+            font-size: 30px;
+            margin: 0 0 10px;
+            color: #ff6f91;
+        }
+
+        .tutorial-content p {
+            padding-left:10px;
+            color: #666;
+        }
+
+        .tutorial-content  button{
+            text-decoration:none;
+            color: white;
+            background-color: rgb(245, 141, 205);
+            padding: 10px 15px;
+            border-radius: 5px;
+           
+        }
+        .tutorial-content button:hover {
+            background-color: rgb(238, 21, 93);
+        }
+    </style>
+</head>
+<body>
+        <!-- Top Bar Section -->
+        <div class="top-bar">
+            <p>Free Shipping on Orders $60+</p>
+        </div>
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <div class="logo">HudaBeauty</div>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        </div>
+        <!-- Navigation Bar Section -->
+        <div class="nav-bar">
+            <nav class="menu">
+            <a href="New.html">New</a>
+            <a href="Best-Sellers.html">Best Sellers</a>
+            <a href="Eye-Beauty.html">Eye Beauty</a>
+            <a href="Makeup-tutorial.html">Makeup tutorial</a>
+            <a href="Gifts&Sets.html">Gifts & Sets</a>
+            
+            </nav>
+        </div>
+        <!--sec-->
+        <!--item 1-->
+    <script>
+        function replaceWithVideo() {
+          const imgElement = document.getElementById('myImage');
+        
+          const iframe = document.createElement('iframe');
+          iframe.width = '400';
+          iframe.height = '300';
+          iframe.src = 'https://www.youtube.com/embed/usTyGSPNE2g?si=t1a6PzAJhdSTWT2m';
+          iframe.title = 'YouTube video player';
+          iframe.frameBorder = '0';
+          iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+          iframe.allowFullscreen = true;
+        
+          imgElement.parentNode.replaceChild(iframe, imgElement);
+        }
+        </script>
+        <!--item 2-->
+        <script>
+            function replaceWithVideo1() {
+              const imgElement = document.getElementById('myImage1');
+            
+              const iframe = document.createElement('iframe');
+              iframe.width = '400';
+              iframe.height = '300';
+              iframe.src = "https://www.youtube.com/embed/CDxp31wJfjc?si=zCwQuv73LfOX3v4t";
+              iframe.title = 'YouTube video player';
+              iframe.frameBorder = '0';
+              iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+              iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+              iframe.allowFullscreen = true;
+            
+              imgElement.parentNode.replaceChild(iframe, imgElement);
+            }
+            </script>
+            <!--item 3-->
+            <script>
+                function replaceWithVideo2() {
+                  const imgElement = document.getElementById('myImage2');
+                
+                  const iframe = document.createElement('iframe');
+                  iframe.width = '400';
+                  iframe.height = '300';
+                  iframe.src = "https://www.youtube.com/embed/rnqidYsAntQ?si=MR7-If4Tw7Ci_W-D" ;
+                  iframe.title = 'YouTube video player';
+                  iframe.frameBorder = '0';
+                  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                  iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+                  iframe.allowFullscreen = true;
+                
+                  imgElement.parentNode.replaceChild(iframe, imgElement);
+                }
+                </script>
+    <header>
+        <h1>Makeup Tutorials & How-To</h1>
+        <link rel="Stylesheet" href="style/makeup tatorial.css">
+        
+    </header>
+    <div class="container">
+        <h1>Learn How to Enhance Your Beauty</h1>
+        <div class="tutorial">
+            <div class="tutorial-item">
+<!--item 1-->
+
+<img id="myImage" src="media/makeup1.jpg">
+               
+                <div class="tutorial-content">
+                     <h3>Natural Look Tutorial</h3>
+                    <p>Master the art of a subtle, everyday makeup look.</p>
+                    <button onclick ="replaceWithVideo()">Watch Now</button>
+
+                </div>
+            </div>
+<!--item 2-->
+            <div class="tutorial-item">
+                <img id="myImage1"src="media/eyeshadow.jpg" alt="Bold Eyeshadow">
+                <div class="tutorial-content">
+                    <h3>Bold Eyeshadow</h3>
+                    <p>Step-by-step guide to creating bold, colorful eyes.</p>
+                    <button onclick="replaceWithVideo1()">Watch Now</button>
+
+                </div>
+            </div>
+<!--item 3-->
+            <div class="tutorial-item">
+                <img id="myImage2" src="media/foundation2.webp" alt="Flawless Foundation">
+                <div class="tutorial-content">
+                    <h3>Flawless Foundation</h3>
+                    <p>Learn how to achieve a smooth and even skin tone.</p>
+                    <button onclick="replaceWithVideo2()">Watch Now</button>
+
+                </div>
+            </div>
+        </div>   
+        
+       
+        </div>
+</body>
+</html>

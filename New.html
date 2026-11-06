@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      /* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.top-bar {
+  background-color: #efe9e4;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+}
+.logo-section{
+  background-color: #eb3986;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 32px;
+  margin-left: 650px;
+}
+
+.icons{
+  margin-right: 50px;
+  font-size: 25px;
+  color: white;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+.nav-bar {
+  background-color:white;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  margin-left: 450px;
+  margin-top:18px ;
+}
+.menu a {
+  margin: 10px;
+  color:black;
+  text-decoration: none;
+  border: 1px solid #eb3986;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu a:hover {
+  background-color:#eb3986;
+  color: white;
+}
+.shop-new{
+  padding-top: 20px;
+  margin-top: 15px;
+  height:500px;
+  background-color:#efe9e4;
+  }
+.shop-new h1 {
+    font-size: 30px;
+    text-align: center;
+    text-decoration:underline ;
+        }
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 20px;
+  padding-right: 25px;
+        }
+    
+.product {
+  width: 150px;
+  text-align: center;
+  }
+  .product img {
+  height: 200px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #eb3986;
+  }
+ .product img:hover{
+   transform: scale(1.1);
+  }
+button {
+    margin-top: 20px;
+    background-color: black;
+    transition: transform 0.3s ease-in-out;
+    height: 40px;
+    width: 150px;
+    margin-left: 650px;
+    color: white;
+          border: 1px solid black;
+        }
+        button:hover {
+          background-color: #555;
+          transform: scale(1.1);
+        }
+    
+        </style>
+</head>
+<body>
+      <!-- Top Bar Section -->
+      <div class="top-bar">
+        <p>Free Shipping on Orders $60+</p>
+    </div>
+    <!-- Logo Section -->
+    <div class="logo-section">
+        <div class="logo">HudaBeauty</div>
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-lock"></i>
+        </div>
+    </div>
+    <!-- Navigation Bar Section -->
+    <div class="nav-bar">
+        <nav class="menu">
+            <a href="New.html">New</a>
+            <a href="Best-Sellers.html">Best Sellers</a>
+            <a href="Eye-Beauty.html">Eye Beauty</a>
+            <a href="Makeup-tutorial.html">Makeup tutorial</a>
+            <a href="Gifts&Sets.html">Gifts & Sets</a>
+        </nav>
+    </div>
+    <!--sec-->
+    <div class="shop-new">
+        <h1>SHOP NEW</h1>
+        <div class="product-container">
+          <div class="product">
+            <img src="./media/yum.jpg">
+            <h3>Yum Boujee Marshmallow | 81</h3>
+          </div>
+          <div class="product">
+            <img src="./media/travel.jpg">
+            <h3>Yum Boujee Marshmallow 10ml</h3>
+          </div>
+          <div class="product">
+            <img src="./media/duo.jpg" >
+            <h3>The Wedding Duo Set</h3>
+          </div>
+          <div class="product">
+            <img src="./media/eye.jpg">
+            <h3>Icy Nude Eyeshadow Palette</h3>
+          </div>
+          <div class="product">
+            <img src="./media/filter.jpg">
+            <h3>Icy Nude Blush Filter</h3>
+          </div>
+          <div class="product">
+            <img src="./media/lip.jpg">
+            <h3>Icy Nude FAUX FILLER Lip Gloss</h3>
+          </div>
+          <div class="product">
+            <img src="./media/gloss.jpg">
+            <h3>Icy Nude PH Face Gloss</h3>
+          </div>
+        </div>
+            <button>SHOP ALL NEW</button>
+      </div>
+        
+</body>
+</html>
